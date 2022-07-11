@@ -91,21 +91,21 @@ Console.WriteLine($"Количество чётных чисел = {evenNumbers}
 
 // double DifferenceOfNumbers(double[] randomArray)
 // {
-//     double max = 0;
-//     double min = 0;
+//     double maxNumber = 0;
+//     double minNumber = 0;
 //     double differenceNumbers = 0;
 
 //     for (int i = 0; i < randomArray.Length; i++)
 //     {
-//         if (randomArray[i] > max)
+//         if (randomArray[i] > maxNumber)
 //         {
-//             max = randomArray[i];
+//             maxNumber = randomArray[i];
 //         }
-//         if (randomArray[i] < min)
+//         if (randomArray[i] < minNumber)
 //         {
-//             min = randomArray[i];
+//             minNumber = randomArray[i];
 //         }
-//         differenceNumbers = max - min;
+//         differenceNumbers = maxNumber - minNumber;
 //     }
 //     return differenceNumbers;
 // }
