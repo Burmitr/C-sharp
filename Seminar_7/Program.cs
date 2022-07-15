@@ -131,7 +131,7 @@
 //     return array;
 // }
 
-// void PrintSumArray(int[,] array)
+// void SumPrintArray(int[,] array)
 // {
 //     int sum = 0;
 //     for (int i = 0; i < array.GetLength(0); i++)
@@ -144,12 +144,14 @@
 //             }
 //         }
 //     }
-//     Console.WriteLine("Сумма чисел главной диагонали = " + sum);
+//     Console.WriteLine($"Сумма чисел главной диагонали = {sum}");
 // }
 
 // Console.WriteLine("Введенный массив: ");
 
 // FillPrintArray(matrix);
 
-// PrintSumArray(matrix);
+// SumPrintArray(matrix);
+
+
 
