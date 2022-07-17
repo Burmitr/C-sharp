@@ -4,6 +4,41 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
+// Console.WriteLine("Задай кол-во строк в массиве: ");
+// int rows = Int32.Parse(Console.ReadLine());
+
+// Console.WriteLine("Задай кол-во столбцов в массиве: ");
+// int columns = Int32.Parse(Console.ReadLine());
+
+// double[,] matrix = new double[rows, columns];
+
+// void CreateDoubleArray(double[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = new Random().NextDouble() * 10 - 5;
+//         }
+//     }
+// }
+
+// void RoundingArrayNumbers(double[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             double arrayNumber = Math.Round(array[i, j], 1);
+//             Console.Write(arrayNumber + "\t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// CreateDoubleArray(matrix);
+// RoundingArrayNumbers(matrix);
+
 
 
 // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве,
