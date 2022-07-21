@@ -71,13 +71,14 @@ int pows = int.Parse(Console.ReadLine());
 Console.WriteLine("Задайте кол-во столбцов в массиве: ");
 int columns = int.Parse(Console.ReadLine());
 
+if (pows != columns) Console.WriteLine("Неверно задан массив!");
+return;
+
 Console.WriteLine("Задайте минимальное значение массива: ");
 int minRandomNumber = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Задайте максимальное значение массива: ");
 int maxRandomNumber = int.Parse(Console.ReadLine());
-
-if (m != n) Console.WriteLine("Неверно задан массив!");
 
 ///summary - описание метода
 /// массив m * n 
