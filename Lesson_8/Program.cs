@@ -9,56 +9,56 @@
 // 2 3 5 9
 // 2 4 4 8
 
-// int[,] GetArray(int m, int n)
-// {
-//     int[,] array = new int[m, n];
-//     for (int i = 0; i < m; i++)
-//     {
-//         for (int j = 0; j < n; j++)
-//         {
-//             array[i, j] = new Random().Next(1, 10);
-//         }
-//     }
-//     return array;
-// }
+int[,] GetArray(int m, int n)
+{
+    int[,] array = new int[m, n];
+    for (int i = 0; i < m; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            array[i, j] = new Random().Next(1, 10);
+        }
+    }
+    return array;
+}
 
-// void PrintArray(int[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             Console.Write(array[i, j] + "\t");
-//         }
-//         Console.WriteLine();
-//     }
-// }
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + "\t");
+        }
+        Console.WriteLine();
+    }
+}
 
-// void SortNumbersArray(int[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             for (int k = 0; k < array.GetLength(1) - j -1; k++)
-//             {
-//                 if (array[i, k] > array[i, k + 1])
-//                 {
-//                     int temp = array[i, k];
-//                     array[i, k] = array[i, k + 1];
-//                     array[i, k + 1] = temp;
-//                 }
-//             }
-//         }
-//     }
-// }
+void SortNumbersArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(1) - j -1; k++)
+            {
+                if (array[i, k] > array[i, k + 1])
+                {
+                    int temp = array[i, k];
+                    array[i, k] = array[i, k + 1];
+                    array[i, k + 1] = temp;
+                }
+            }
+        }
+    }
+}
 
-// int[,] matrix = GetArray(3, 4);
-// PrintArray(matrix);
-// SortNumbersArray(matrix);
+int[,] matrix = GetArray(3, 4);
+PrintArray(matrix);
+SortNumbersArray(matrix);
 
-// Console.WriteLine("Результат сортировки:");
-// PrintArray(matrix);
+Console.WriteLine("Результат сортировки:");
+PrintArray(matrix);
 //____________________________________________________________________________________________
 
 
@@ -216,7 +216,7 @@
 //         {
 //             for (int k = 0; k < array.GetLength(2); k++)
 //         {
-//             array[i, j, k] = new Random().Next(1, 99);
+//             array[i, j, k] = new Random().Next(1, 100);
 //         }
 //         }
 //     }
@@ -241,9 +241,3 @@
 // WriteArray(multidimensionalArray);
 //____________________________________________________________________________________________
 
-// Задача 62. Заполните спирально массив 4 на 4.
-// Например, на выходе получается вот такой массив:
-// 1 2 3 4
-// 12 13 14 5
-// 11 16 15 6
-// 10 9 8 7
